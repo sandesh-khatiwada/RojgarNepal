@@ -41,9 +41,7 @@ To run the project, follow the instructions below:
  **Clone the repository:**
 
  
-    ```bash
     git clone git@github.com:sandesh-khatiwada/RojgarNepal.git
-    ```
 
 
 ### Server
