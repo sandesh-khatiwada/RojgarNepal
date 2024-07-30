@@ -14,6 +14,7 @@ RojgarNepal is a comprehensive platform designed to connect freelancers with cli
 5. [Usage](#usage)
 6. [Contributing](#contributing)
 7. [License](#license)
+8. [Screenshots](#screenshots)
 
 ## Introduction
 RojgarNepal is a job portal designed to facilitate connections between freelancers and clients. It includes features such as job postings, applications, user profiles, and communication tools.
