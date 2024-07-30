@@ -173,9 +173,20 @@ This project is licensed under the MIT License.
 
 
 ## Screenshots
-- ![LogIn](images/login.png)
-- ![Client Dashboard](images/client-dashboard.png)
-- ![Freelancer Dashboard](images/freelancer-dashboard.png)
-- ![Chat](images/chat.png)
-- ![Filtered Search](images/freelancer-search.png)
-- ![Admin Panel](images/admin.png)
+-LogIn
+![LogIn](images/login.png)
+
+-Client Dashboard
+![Client Dashboard](images/client-dashboard.png)
+
+-Freelancer Dashboard
+![Freelancer Dashboard](images/freelancer-dashboard.png)
+
+-Chat
+![Chat](images/chat.png)
+
+-Filtered Search
+![Filtered Search](images/freelancer-search.png)
+
+-Admin Panel
+![Admin Panel](images/admin.png)
