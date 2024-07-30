@@ -38,6 +38,12 @@ The project is divided into several directories, each handling a specific part o
 
 To run the project, follow the instructions below:
 
+ **Clone the repository:**
+
+    ```bash
+    git clone git@github.com:sandesh-khatiwada/RojgarNepal.git
+    ```
+
 ### Server
 
 1. **Navigate to the server directory:**
@@ -53,7 +59,7 @@ To run the project, follow the instructions below:
     ```
 
 3. **Set Up Database:**
-    - Create a database named `RojgarNepal`.
+    - Create a MySQL database named `RojgarNepal`.
 
 4. **Create environment variables:**
     - Create a `.env` file inside the `server` directory.
