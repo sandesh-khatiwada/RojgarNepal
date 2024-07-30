@@ -1,0 +1,64 @@
+#client side files
+
+# Logs
+logs
+client/*.log
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client/pnpm-debug.log*
+client/lerna-debug.log*
+
+client/node_modules
+client/dist
+client/dist-ssr
+client/*.local
+
+# Editor directories and files
+client/.vscode/*
+client/!.vscode/extensions.json
+client/.idea
+client/.DS_Store
+client/*.suo
+client/*.ntvs*
+client/*.njsproj
+client/*.sln
+client/*.sw?
+
+
+#admin directory files
+# Logs
+admin/logs
+admin/*.log
+admin/npm-debug.log*
+admin/yarn-debug.log*
+admin/yarn-error.log*
+admin/pnpm-debug.log*
+admin/lerna-debug.log*
+
+admin/node_modules
+admin/dist
+admin/dist-ssr
+admin/*.local
+
+# Editor directories and files
+admin/.vscode/*
+admin/!.vscode/extensions.json
+admin/.idea
+admin/.DS_Store
+admin/*.suo
+admin/*.ntvs*
+admin/*.njsproj
+admin/*.sln
+admin/*.sw?
+
+
+#server side files
+server/node_modules
+server/.env
+
+
+#recommendation files
+
+recommendation/__pycache__
+recommendation/.env
