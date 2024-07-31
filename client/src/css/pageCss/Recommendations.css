@@ -1,0 +1,162 @@
+.recommendation-container {
+    max-width: 1500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.job-summary {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.freelancers-list {
+    width: 68%;
+    font-weight: bolder;
+}
+
+.freelancer-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; 
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-description {
+    max-height: 210px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 10;
+}
+
+.freelancer-item button {
+    background-color: #3D8116;
+    border: none;
+    border-radius: 2rem;
+    height: 30px;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.unsuccesful-message{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+}
+
+
+
+.profile-info{
+    text-align: center;
+}
+.profile-info img {
+    /* height: 100%; */
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+.name p {
+
+    color: #003366;
+    font-size: 2rem;
+}
+
+.rating {
+    /* color: #ecc92c; */
+    font-weight: bold;
+}
+
+.job-post-options {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-info {
+    /* display: flex; */
+    margin-bottom: 10px;/
+}
+
+.additional-info {
+    margin-top: auto;
+}
+
+.status-projects {
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.job-post-options button,
+.job-post-options a {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+span.title {
+    color: #003366;
+}
+
+.job-post-options button {
+    background-color: #003366;
+    color: #fff;
+}
+
+.heading-div {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.heading-div h1 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .recommendation-container {
+        flex-direction: column;
+    }
+
+    .job-summary {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .freelancers-list {
+        width: 100%;
+    }
+
+    .freelancer-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .freelancer-item button {
+        width: 100%;
+    }
+}

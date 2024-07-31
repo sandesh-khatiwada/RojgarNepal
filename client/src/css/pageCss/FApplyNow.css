@@ -1,0 +1,187 @@
+.apply-now {
+  text-align: center;
+  padding: 20px;
+}
+
+.apply-title {
+  font-size: 36px;
+  color: #283f76;
+  margin-bottom: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.apply-title-orange {
+  color: orange;
+}
+
+.success-message {
+  background-color: rgba(139, 195, 74, 0.482);
+  color: #2d6b2f;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  margin: 1rem auto;
+  border-radius: 5px;
+  max-width: 55%;
+}
+
+.error-message {
+  font-size: 23px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ad5206;
+  font-weight: 400;
+  margin: 1rem auto;
+  background-color: rgba(252, 174, 109, 0.635);
+  max-width: 55%;
+}
+
+.apply-card {
+  background-color: #eeeaea;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-image {
+  width: 70px;
+  height: 72px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #444343;
+}
+
+.message-box {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #bebdbd;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.message-box:focus {
+  border: #78a6cc 2px solid;
+  outline: none;
+}
+
+.send-button {
+  background-color: #0f2f50;
+  color: white;
+  border: none;
+  width: 130px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 32rem;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #004494;
+}
+
+/* responsive */
+
+/* Adjustments for screens up to 768px wide */
+@media (max-width: 768px) {
+  .apply-title {
+    font-size: 22px;
+  }
+
+  .apply-card {
+    padding: 15px;
+    max-width: 500px;
+  }
+
+  .user-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .user-name {
+    font-size: 16px;
+  }
+
+  .message-box {
+    height: 90px;
+  }
+
+  .send-button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .success-message, .error-message {
+    font-size: 14px;
+    padding: 8px;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+/* Adjustments for screens up to 480px wide */
+@media (max-width: 480px) {
+  .apply-title {
+    font-size: 20px;
+  }
+
+  .apply-card {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-image {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .message-box {
+    height: 80px;
+  }
+
+  .send-button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .success-message, .error-message {
+    font-size: 12px;
+    padding: 6px;
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+}

@@ -1,0 +1,89 @@
+.doughnut-chart-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .doughnut-chart {
+    position: relative;
+  }
+  
+  .half-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform-origin: center;
+  }
+  
+  .outer-circle {
+    background: conic-gradient(#171b68 0deg, #2871fa 270deg, transparent 270deg);
+    border: 10px solid white;
+    border-radius: 50%;
+    animation: drawOuterCircle 3s ease-in-out forwards;
+  }
+  
+  .inner-circle {
+    background: conic-gradient(#ffb13b 0deg, #f8db8d 270deg, transparent 270deg);
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+    border: 10px solid white;
+    border-radius: 50%;
+    animation: drawInnerCircle 5s ease-in-out forwards;
+  }
+  
+  .innermost-circle {
+    background: white;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 10px solid white;
+    border-radius: 50%;
+    animation: drawInnermostCircle 5s ease-in-out forwards;
+  }
+  
+  .data-display {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #478a2c;
+    text-align: center;
+    line-height: 160px; /* This centers the text vertically */
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+  }
+  
+  @keyframes drawOuterCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(225deg);
+    }
+  }
+  
+  @keyframes drawInnerCircle {
+    10% {
+      transform: rotate(120deg);
+    }
+    100% {
+      transform: rotate(225deg);
+    }
+  }
+  @keyframes drawInnermostCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(225deg);
+    }
+  }

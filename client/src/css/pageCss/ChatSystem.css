@@ -1,0 +1,459 @@
+/* General layout */
+.chat-system {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* User list */
+  .user-list {
+    width: 100%;
+    height: 30%;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .verified-tick {
+    color: blue;
+    font-size: 1.4em;
+    margin-left: 5px;
+
+  }
+
+  
+  .user-list.hidden {
+    display: none; /* Hide user list on mobile view when a conversation is selected */
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .user:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user.active {
+    background-color: #e0e0e0;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    flex: 1;
+  }
+  
+  /* Chat box */  
+  .chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Ensure chat box is a column layout */
+    justify-content: flex-start; /* Align messages to start at the top */
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 18px;
+    overflow-y: auto;
+    border: 1px solid gray;
+  }
+  
+  .chat-box.full-screen {
+    width: 100%; /* Full screen width for mobile view */
+    height: 100%; /* Full screen height for mobile view */
+  }
+  
+  .conversation {
+    /* width: 100%; */
+    padding: 20px;
+    margin-bottom: 80px;
+  
+  
+  }
+  
+  .placeholder-message {
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+  }
+  
+  /* Messages */
+  .messages {
+    /* border-top: 1px solid #ccc; */
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* border: 2px solid rgb(48, 44, 44); */
+    /* border-right: 2px solid rgb(48, 44, 44); */
+    /* border-left: 2px solid rgb(48, 44, 44); */
+  
+  
+  
+  }
+  
+  div.header{
+    /* border:2px solid red; */
+    height: 68px;
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+    width: 103.5%;
+    margin-left: -20px;
+    /* border-radius: 10px; */
+    /* border: 2px solid red; */
+    font-weight: bolder;
+    margin-top: -18px;
+  
+    background-color: #e0e0e0;
+  
+    padding: 20px;
+  
+  
+  }
+  
+  
+  .request-booking{
+    background-color:#042839;
+    color:white;
+    font-weight: bolder;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+    width: 150px;
+    float: right;
+    position: relative;
+    top: -10px;
+    
+  
+  }
+  
+  .message-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 60%;
+    text-align: left;
+  }
+  
+  p#recent-message {
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .message.sent {
+    align-self: flex-end;
+    background-color: #008FFF;
+    color: white;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  .message.received {
+    align-self: flex-start;
+    background-color: #283f76;
+    color: white;
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+  
+  .message-profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .message-input {
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    /* border-top: 1px solid #ccc; */
+    position: fixed;
+    bottom: 5px;
+    left: 31%;
+  
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .message-input button {
+    padding: 10px 20px;
+    background-color: #008fff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .message-input button:hover {
+    background-color: #0077cc;
+  }
+  
+  /* Go Back button */
+  .go-back {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .go-back:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .job-post {
+    margin-bottom: 20px;
+  }
+  
+  .job-post h3 {
+    margin: 0 0 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-modal {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  button[type="button"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Style for the job post container */
+  .job-post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for job post container */
+  .job-post:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style for the job post title */
+  .job-post h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Style for the Select button */
+  .job-post button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover and active effects for Select button */
+  .job-post button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .job-post button:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+  }
+  
+  /* Style for the job post content */
+  .job-post p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 768px) {
+    .chat-system {
+      flex-direction: row;
+    }
+  
+    .user-list {
+      width: 30%;
+      height: 100%;
+      border-right: 1px solid #ccc;
+      border-bottom: none;
+    }
+  
+    .chat-box {
+      width: 70%;
+    }
+  
+    .conversation {
+      width: 100%;
+    }
+  
+    .go-back {
+      display: none; /* Hide Go Back button on larger screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .message-container {
+      margin-bottom: 15px;
+    }
+  
+    .message {
+      padding: 15px;
+      border-radius: 25px;
+      max-width: 70%;
+    }
+  
+    .message-profile-image {
+      width: 40px;
+      height: 40px;
+      margin: 0 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .message-input {
+      width: 100%;
+      position: fixed;
+      bottom: 10px;
+      left: 0%;
+    }
+  }
+  

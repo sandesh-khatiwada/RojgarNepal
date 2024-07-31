@@ -1,0 +1,173 @@
+/* FreelancerDashboard.module.css */
+
+.container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    height: 100vh; /* Full height of the viewport */
+    position: sticky;
+    top: 0;
+  }
+  
+  .profileInfo {
+    text-align: center;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .freelancerName {
+    font-size: 1.5rem;
+    color: #336496;
+    margin-bottom: 10px;
+  }
+  
+  .email, .phone, .location, .description, .rating {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .email i, .phone i, .location i, .rating i {
+    margin-right: 10px;
+    color: #336496;
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mainContent h1 {
+    color: #336496;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .freelancerNameHighlight {
+    color: #ff9900;
+  }
+  
+  .highlight {
+    color: #ff9900;
+  }
+  
+  .mainContent h2 {
+    color: #336496;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mainContent p {
+    color: #030f22;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .section {
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .booking, .bookingRequest {
+    margin-bottom: 15px;
+  }
+  
+  .map {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .acceptButton, .rejectButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .acceptButton {
+    background-color: #336496; /* Green */
+    color: white;
+  }
+  
+  .rejectButton {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .viewButton {
+    background-color: #336496;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .viewButton:hover {
+    background-color: #265983;
+  }
+  
+  .viewButton i {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide sidebar on smaller screens */
+    }
+  
+    .mainContent {
+      padding: 10px;
+    }
+  
+    .mainContent h1 {
+      font-size: 2rem;
+    }
+  
+    .mainContent h2 {
+      font-size: 1.5rem;
+    }
+  
+    .mainContent p {
+      font-size: 1rem;
+    }
+  
+    .section {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+  

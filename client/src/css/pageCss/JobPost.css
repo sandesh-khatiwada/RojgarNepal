@@ -1,0 +1,139 @@
+.job-post-form {
+
+
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.job-post-form h2 {
+  text-align: center;
+  color: #333;
+  margin: 20px;
+}
+
+.job-post-form h2 span {
+  color: #ff7f00;
+}
+
+.message {
+  text-align: center;
+  padding: 10px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  margin-bottom: 20px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+}
+
+.job-post-form form div {
+  margin-bottom: 15px;
+}
+
+.job-post-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.job-post-form label span {
+  color: red;
+}
+
+.job-post-form input,
+.job-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.map-container {
+  /* margin-bottom: 15px; */
+
+  height: 500px;
+}
+
+
+.job-post-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #183E67;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.job-post-form button:hover {
+  background-color: #0f2f50;
+}
+
+
+.job-post-form .duration-input {
+  display: flex;
+  gap: 10px;
+}
+
+.job-post-form .duration-input input {
+  flex: 2;
+}
+
+.job-post-form .duration-input select {
+  flex: 1;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .job-post-form {
+    padding: 15px;
+  }
+
+  .job-post-form label {
+   font-size: 1rem;
+  }
+
+  .job-post-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .job-post-form input,
+  .job-post-form textarea {
+    padding: 8px;
+  }
+
+  .job-post-form button {
+    padding: 12px;
+  }
+
+
+.map-container MapContainer{
+  height: 60%;
+}
+}
+
+@media screen and (max-width:500px) {
+  .job-post-form h2 {
+    font-size: 1rem;
+  }
+
+  .job-post-form label {
+    font-size: 0.7rem;
+   }
+}
+
+
+@media screen and (max-width:150px) {
+  .job-post-form {
+    overflow: scroll;
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,121 @@
+/* ClientDashboard.module.css */
+
+.container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 400px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    height: 100vh; /* Full height of the viewport */
+    position: sticky;
+    top: 0;
+  }
+  
+  .profileInfo {
+    text-align: center;
+  }
+  
+  .profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .clientName {
+    font-size: 1.5rem;
+    color: #336496;
+    margin-bottom: 10px;
+  }
+  
+  .email, .phone, .location {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .email i, .phone i, .location i {
+    margin-right: 10px;
+    color: #336496;
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mainContent h1 {
+    color: #336496;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .clientNameHighlight {
+    color: #ff9900;
+  }
+  
+  .highlight {
+    color: #ff9900;
+  }
+  
+  .mainContent h2 {
+    color: #336496;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mainContent p {
+    color: #030f22;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .section {
+    margin-top: 30px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .booking {
+    margin-bottom: 15px;
+  }
+  
+  .map {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 10px;
+  }
+  
+  .viewButton {
+    background-color: #336496;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewButton:hover {
+    background-color: #265983;
+  }
+  
+  .viewButton i {
+    margin-right: 5px;
+  }
+  

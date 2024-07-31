@@ -1,0 +1,220 @@
+/* SignupForm.css */
+
+/* Base styles */
+.signup-container {
+  max-width: 900px; /* Increased max-width for the overall form */
+  width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.signup-form h2 span {
+  color: #ff6600;
+}
+
+input#fullName{
+  width: 106.5%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add margin between rows */
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 20px; /* Add margin between rows */
+}
+
+.form-group:not(:last-child) {
+  margin-right: 50px; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%; /* Occupy full width */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px; /* Add margin between input fields */
+}
+
+.submit-btn {
+  background-color: #183E67;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0f2f50;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color:green;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styles */
+.error-message {
+  color: rgb(232, 91, 91);
+  font-size: xx-large;
+  font-weight: bold;
+  /* text-align: center; */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .form-row {
+    flex-direction: column; /* Stack inputs vertically on smaller screens */
+  }
+
+  .form-group {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+
+  .submit-btn {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+
+  input#email{
+    width:106.5%;
+  }
+
+  input#phoneNo{
+    width:94%;
+  }
+
+  select#location{
+    width: 106%;
+  }
+  select#userType{
+    width: 94%;
+  }
+
+  input#password{
+    width:106%;
+  }
+
+  input#confirmPassword{
+    width: 94%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .signup-container {
+    width: 100%; /* Ensure container takes full width */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+
+  .submit-btn {
+    padding: 10px; /* Adjust padding for very small screens */
+    font-size: 0.9rem; /* Adjust font size for very small screens */
+  }
+
+  .error-message {
+    font-size: large; /* Adjust error message font size */
+  }
+
+
+  input#email{
+    width:106.5%;
+  }
+
+  input#phoneNo{
+    width:86%;
+  }
+
+  select#location{
+    width: 106%;
+  }
+  select#userType{
+    width: 86%;
+  }
+
+  input#password{
+    width:105%;
+  }
+
+  input#confirmPassword{
+    width: 86%;
+  }
+
+  .signup-form h2 {
+    text-align: left;
+    color: #333;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+
+  .form-group label {
+    font-size: 0.9rem; /* Adjust label font size for very small screens */
+  }
+
+
+}
+
+
+@media screen and (max-width:125px) {
+  .signup-container{
+    /* overflow: scroll; */
+
+    overflow: scroll;
+    min-width: 100px;
+  }
+}
