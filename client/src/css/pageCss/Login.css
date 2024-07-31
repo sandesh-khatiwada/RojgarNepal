@@ -1,0 +1,179 @@
+/* LoginForm.css */
+
+/* Base styles */
+.login-container {
+  max-width: 900px;
+  width: 90%;
+  margin-top: 35px;
+  margin-bottom: 126px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.signup-link {
+  /* text-align: center; */
+  text-align: end;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.login-form h2 span {
+  color: #ff6600;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group-forgetPass {
+  text-align: right;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.form-group:not(:last-child) {
+  margin-right: 50px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #183E67;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.submit-btn:hover {
+  background-color: #0f2f50;
+}
+
+.login-link {
+  text-align: right; /* Align to the right */
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: green;
+  text-decoration: none;
+}
+
+.signup-link a:hover{
+  text-decoration: underline;
+}
+
+
+.form-group-forgetPass a {
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styles */
+.error-message {
+  color: rgb(232, 91, 91);
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .login-form h2 {
+    text-align: left;
+    color: #333;
+    font-size: 1rem;
+  }
+}
+
+/* Additional responsiveness for better mobile experience */
+@media only screen and (max-width: 768px) {
+  .login-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .login-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+  }
+
+  .submit-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .error-message {
+    font-size: large;
+  }
+}

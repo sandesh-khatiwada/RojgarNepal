@@ -1,0 +1,145 @@
+.verify-otp-container {
+  max-width: 700px;
+  width: 90%;
+  margin-top: 90px;
+  margin-bottom: 202px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.verify-otp-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.verify-otp-form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.verify-otp-form h2 span {
+  color: #ff6600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  width: 20%;
+  padding: 15px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.otp-input:focus {
+  border-color: green;
+
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #183E67;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bolder;
+  margin: auto;
+  width: 50%;
+}
+
+.submit-btn:hover {
+  background-color: #0f2f50;
+}
+
+.error-message {
+  color: rgb(232, 91, 91);
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .verify-otp-container {
+    margin-left: 5%;
+    padding: 10px;
+  }
+
+  .otp-input {
+    width: 15%;
+    padding: 12px;
+  }
+
+  .verify-otp-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .submit-btn {
+    width: fit-content;
+    font-size: 0.8rem;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form-group label {
+    font-size: 0.5rem;
+  }
+
+  .verify-otp-form h2 {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    margin-top: -10px;
+  }
+
+  .otp-input {
+    width:300%;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width:200px) {
+  .otp-input {
+    width:300%;
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 150px) {
+  .verify-otp-container {
+    min-width: 120px;
+  }
+
+  .verify-otp-form h2 {
+    font-size: 0.7rem;
+  }
+
+  .form-group label {
+    font-size: 0.1rem;
+
+  }
+
+
+}

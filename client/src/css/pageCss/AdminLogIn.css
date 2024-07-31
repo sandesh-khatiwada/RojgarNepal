@@ -1,0 +1,112 @@
+.alogo {
+  height: 50px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.alogin-container {
+  background-image: url(./adminbg.jpg); /* Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  height: 120vh; /* Cover the full viewport height */
+  justify-content: center;
+  align-items: center;
+}
+
+.alogin-form {
+  width: 30rem;
+  max-width: 90%; /* Use max-width for better responsiveness */
+  align-items: center;
+  height: 20rem;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border: 1px solid #dddddd7f;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(139, 139, 139, 0.75);
+  background-color: #ffffff57;
+}
+
+.alogin-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #283f76;
+}
+
+.aform-group {
+  margin-bottom: 2rem;
+}
+
+.aform-controli, .aform-controlp {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.aerror-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.apassword-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.aforgot-password {
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.aforgot-password:hover {
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+.arojgar-np{
+  color: #ff7f3e;
+}
+.alogin-button {
+  width: 100%;
+  padding: 10px;
+  background-color:#1b294c;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+margin-top: -1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition:0.3s ease; /* Add transition for smooth effect */
+}
+
+.alogin-button:hover {
+  background-color:#125194; /* Darker green for hover effect */
+}
+
+.alogin-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Code */
+@media (max-width: 768px) {
+  .alogin-form {
+    width: 80%;
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .alogin-form {
+    width: 90%;
+    margin-top: 20%;
+  }
+}

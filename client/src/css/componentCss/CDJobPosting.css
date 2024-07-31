@@ -1,0 +1,131 @@
+.job-postings-section {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.job-postings-section h2 {
+  text-align: center;
+  color: #283f76;
+  font-family: sans-serif;
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+.post-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job-posting-card {
+  background: #fbfafa;
+  padding: 20px;
+  border-radius: 10px;
+  border: #78b5ff 2px solid;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex: 0 0 30%;
+  max-width: 30%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .job-posting-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.job-posting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.job-posting-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+
+}
+
+.job-posting-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.job-posting-duration {
+  font-size: 14px;
+  color: rgb(72, 69, 69);
+}
+
+.job-posting-description {
+  font-size: 18px;
+  color: #424242;
+  margin: 10px 0;
+}
+
+.job-posting-location {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.job-posting-budget {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.job-posting-applications {
+  font-size: 16px;
+  color: #555;
+}
+
+.delete-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ff4c4c;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+  transform: scale(1.1);
+}
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.view-previous-btn,
+.view-more-btn {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #283f76;
+  color: white;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-previous-btn:hover,
+.view-more-btn:hover {
+  background-color: #1a2b5c;
+  transform: scale(1.1);
+}

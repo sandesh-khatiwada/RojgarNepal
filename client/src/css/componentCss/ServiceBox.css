@@ -1,0 +1,51 @@
+.service-box {
+  /* width: 100%; */
+  max-width: 8cm;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.service-box:hover{
+  color:#F9992E;
+  cursor: pointer;
+  box-shadow: 1px 10px 25px gray;
+  transition: 0.2s ease-in-out;
+
+}
+.service-image {
+  width: 90%;
+  /* height: 6cm; */
+  object-fit: cover;
+}
+
+.service-title {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.service-description {
+  padding: 0 10px 10px;
+  font-size: 1.3rem;
+}
+
+
+@media screen and (max-width:768px) {
+
+  .service-box{
+    width: 90%;
+
+  }
+
+  
+  .service-title {
+  
+    font-size: 1rem;
+
+  }
+}

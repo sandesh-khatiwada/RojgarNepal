@@ -1,0 +1,611 @@
+.sidebar-and-MyProjects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-cover-img {
+  text-align: center;
+  background: radial-gradient(circle, #f9b779d4, #ffffff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 11rem;
+}
+
+.side-bar-container {
+  margin-left: 40px;
+  padding-bottom: 20px;
+  border-bottom-right-radius: 10px;
+  width: 355px;
+  border-right: #85a7d5 solid 1px;
+  border-bottom: #85a7d5 solid 1px;
+  height: fit-content;
+}
+
+.d-profile-photo {  
+  width: 150px;
+  height: 150px;
+
+  /* background-color: blue; */
+  margin-top: -30%;
+  border-radius: 150px;
+
+}
+
+.d-client-name {
+  /* margin-left: 10px; */
+  font-size: 26px;
+}
+
+.d-email {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: gray;
+  margin-top: 10px;
+}
+
+.d-email-content {
+  color: #336496;
+  text-decoration: underline;
+}
+
+
+
+.d-location {
+  color: #474747;
+  font-family: sans-serif;
+  font-weight: 200;
+  /* margin: 40px 0px; */
+  /* margin-left: 0px; */
+  font-style: italic;
+  margin-top: 10px;
+  
+}
+
+.fa-location-dot {
+  color: #ff7f3e;
+  font-size: 20px;
+}
+
+.edit-profile {
+  border: #283f76 solid 2px;
+  border-radius: 10px;
+  color: black;
+  font-size: 15px;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 60px;
+}
+
+.edit-profile:hover {
+  background-color: #0d022e;
+  color: white;
+  box-shadow: #474747;
+}
+
+.fa-file-pen {
+  color: #283f76;
+}
+
+.fa-file-pen:hover {
+  color: white;
+}
+
+.label {
+  display: block;
+  margin-bottom: -10px;
+  color: #555;
+  margin-left: -15px;
+  font-weight: 600;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px -20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.My-Project-Section {
+  /* width:100%; */
+  padding: 20px;
+  margin-left: 5vw;
+width: fit-content;
+}
+
+#project-section-title{
+
+    text-align: center;
+    color: #283f76;
+    font-family: sans-serif;
+    font-size: 32px;
+    margin-top: 50px;
+  
+}
+
+
+
+.d-location{
+  margin-bottom: 10px;
+}
+.project-details span{
+  margin: 10px;
+  font-weight: bolder;
+  color: rgb(84, 82, 82);
+}
+.my-projects {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-left: 6rem;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-projects-head {
+  text-align: center;
+  color: #283f76;
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: #ffda78 2px solid;
+  margin-top: 20px;
+  margin-bottom: 0rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  /* margin-left: 9rem; */
+  margin-bottom: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.project-details {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.progress.green {
+  background-color: #4CAF50;
+}
+
+.status-section {
+  width: 100%;
+  display: flex;
+}
+
+.status-item {
+  margin-bottom: 10px;
+  color: #555;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.deal-confirmed {
+  margin-left: 3rem;
+}
+
+.task-completed {
+  margin-left: 8rem;
+}
+
+.payment-done {
+  margin-left: 7rem;
+}
+
+.no-of-tasks-completed {
+  color: #283f76;
+  margin-left: 32rem;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.freelancer-contact-flex {
+  display: flex;
+}
+
+.freelancer-info {
+  display: flex;
+  align-items: center;
+}
+
+.freelancer-photo {
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 90px;
+  margin-top: 2rem;
+  margin-left: 0;
+  height: 90px;
+}
+
+.freelancer-details {
+  color: #555;
+  margin-top: 1rem;
+}
+
+.freelancer-name {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 17px;
+}
+
+.freelancer-email {
+  color: #336496;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.freelancer-rating {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+.rating-section {
+  /* margin-top: 6rem; */
+  margin-left: 36rem;
+  color:#1a4a28;
+}
+
+.rating span {
+  transition: color 0.2s;
+  font-size: 1.8rem;
+}
+
+.star:hover {
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  transition: 0.1s;
+}
+
+.success-Message {
+  background-color: rgba(139, 195, 74, 0.482);
+  color: #2d6b2f;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-left: 0;
+  border-radius: 5px;
+  max-width: 55%;
+}
+
+.error-Message {
+  font-size: 23px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ad5206;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  background-color: rgba(252, 174, 109, 0.635);
+  width: 55%;
+}
+
+.review-section {
+  margin-top: 2.5rem;
+}
+
+.your-review {
+  color: #283f76;
+  font-size: 1.2rem;
+  margin-top: -5rem;
+}
+
+.review-section textarea {
+  margin-top: 1rem;
+  height: 200px;
+}
+
+.selected:hover {
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  transition: 0.1s;
+}
+
+.phone-number {
+  margin-top: 5px;
+  margin-left: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fa-message {
+  font-size: 18px;
+}
+
+.chat-now {
+  margin-right: 10px;
+  margin-left: 8rem;
+  padding: 10px 12px;
+  background-color: #007BFF;
+  color: white;
+  border: solid rgb(149, 148, 148) 1px;
+  border-radius: 180px;
+  cursor: pointer;
+}
+
+.chat-now:hover {
+  background-color: white;
+  color: #007BFF;
+}
+
+.status-details {
+  margin-bottom: 20px;
+  border: #bfd7f3 solid 2px;
+  width: 37%;
+  border-radius: 20px;
+  padding: 7px;
+  padding-right: 30px;
+  text-align: center;
+  color: #9c27b0;
+}
+
+.pay-now {
+  display: block;
+  width: 25%;
+  padding: 10px;
+  background-color: #2a629a;
+  color: white;
+  border: #ffda78 2px solid;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-left: 16rem;
+  margin-bottom: -2.6rem;
+}
+
+.pay-now:hover {
+  background-color: #050646;
+  color: white;
+}
+
+.fa-money {
+  margin-right: 5px;
+  margin-left: -6px;
+  font-size: 20px;
+  color: #45f44d;
+}
+
+.edit-status-button {
+  border: none;
+  background: none;
+}
+
+.save-status-button {
+  border: #283f76 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #283f76;
+  font-weight: bold;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.save-status-button:hover {
+  background-color: #283f76;
+  color: white;
+}
+
+.status-dropdown {
+  color: #283f76;
+  border: #ff7f3e solid 1px;
+}
+
+.fa-pencil {
+  color: #283f76;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.submit-review {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  background-color: #283f76;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  /* margin-top: -50px; */
+}
+
+.submit-review:hover {
+  background-color: #0d022e;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .d-profile-photo {
+    /* width: 250px; */
+
+    /* background-color: blue; */
+    margin-top: -10%;
+
+  }
+
+  .sidebar-and-MyProjects {
+    flex-direction: column;
+  }
+  .project-title {
+    margin: 0rem;
+    margin-bottom:1rem;
+  }
+  .status-details{
+    width: 100%;
+    padding-left:1rem
+  }
+.side-bar-container{
+  text-align: center;
+}
+  .side-bar-container,
+  .My-Project-Section {
+    width: 100%;
+    margin-left: 0;
+  }
+.my-projects{
+  margin-left:0rem;
+}
+
+
+.submit-review {
+  /* display: block;
+  width: 20%;
+  padding: 10px;
+  background-color: #283f76;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: -50px; */
+
+  /* float: center; */
+  width: fit-content
+}
+
+
+
+.d-profile-photo {
+  /* width: 50%; */
+  }
+
+  
+.d-bio{
+  margin-left: 6rem;
+}
+.error-Message{
+  margin-right: 0;
+  width: 100%;
+}
+.deal-confirmed{
+  margin-left:0rem;
+  margin-right:2rem;
+}
+.task-completed{
+ margin-left: 0rem;
+}
+.payment-done{
+  margin-left:0rem ;
+}
+
+  .no-of-tasks-completed {
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .freelancer-contact-flex{
+    flex-direction: column;
+  }
+  .contact-info{
+    margin-left: -8rem;
+    margin-top: 2rem;
+  }
+.rating-section{
+  margin-left:0rem;
+  color:#1a4a28;
+}
+  .pay-now {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    margin-top: 2rem;
+  }
+  
+}
+
+
+
+@media screen and (max-width:400px){
+
+.My-Project-Section {
+  width:100%;
+  padding: 5px;
+  margin-left: 0;
+
+}
+
+.freelancer-name, .freelancer-email  {
+font-size: 0.7rem;
+/* position: relative;
+right:20vw;
+bottom: 5vh; */
+}
+
+.phone-number{
+  font-size: 0.7rem;
+
+}
+
+.chat-now{
+
+
+}
+
+
+
+.freelancer-photo{
+
+  height: 100%;
+
+}
+
+
+}

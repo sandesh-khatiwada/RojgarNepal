@@ -1,0 +1,25 @@
+.button {
+  padding: 15px 25px;
+  margin: 10px;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+  background-color: #183E67; /* Adjust color to match your design */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.button:hover {
+  background-color: #0f2f50; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.button:active {
+  background-color: #004494; /* Even darker shade on click */
+  transform: translateY(0); /* Reset lift effect */
+}
+ 

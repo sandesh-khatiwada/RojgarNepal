@@ -1,0 +1,106 @@
+/* Footer.css */
+
+.footer {
+    background: linear-gradient(to right, #007b7b, #003366);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem; /* Use relative font size */
+    width: 100%;
+    min-width: max-content;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    padding: 10px;
+    text-align: center; /* Center-align text for better appearance on small screens */
+}
+
+.logo {
+    /* max-width: 100px; */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add gap between icons */
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem; /* Adjusted font size */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 1 1 100%; /* Full width for smaller screens */
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section h2 {
+        font-size: 1rem; /* Smaller font size for headers */
+    }
+
+    .footer-section ul li a {
+        font-size: 0.9rem; /* Smaller font size for links */
+    }
+
+    .social-icons a {
+        font-size: 1.2rem; /* Smaller font size for icons */
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+        font-size: 0.8rem; /* Smaller font size for bottom text */
+    }
+}

@@ -1,0 +1,94 @@
+
+
+/* Base styles */
+.services-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 33px auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.error-message {
+  color: #e85b5b;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 16 16"><path d="M8.354 12.354a.5.5 0 0 1-.708 0L2.354 6.354a.5.5 0 0 1 .708-.708L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6z"/></svg>') no-repeat right 10px center;
+}
+
+.map-container {
+
+  margin-bottom: 20px;
+
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .form-group {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .services-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form-group label {
+    font-size: 0.9rem;
+  }
+}

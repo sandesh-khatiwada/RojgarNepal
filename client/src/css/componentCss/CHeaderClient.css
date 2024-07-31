@@ -1,0 +1,98 @@
+.Cheader {
+  background: linear-gradient(to right, rgba(228, 245, 55, 0.153), #f0f0f0);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.greeting-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greeting {
+  max-width: 70%;
+}
+
+.greeting h1 {
+  font-size: 43px;
+  font-family: Ubuntu;
+  font-weight: bold;
+  color: #336496;
+  margin-bottom: 10px;
+}
+
+.greeting h1 .client-name {
+  color: #ff9800;
+}
+
+.greeting .motive {
+  margin: 5px 0;
+  font-size: 32px;
+  font-family: SourceSansPro;
+  color: #616161;
+}
+
+.greeting .stats {
+  margin: 5px 0;
+  font-size: 22px;
+  font-family: SourceSansPro;
+  color: #04a23b;
+}
+
+.new-action {
+  color: #007bff;
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px;
+}
+
+.post-job-button {
+  background-color: #004494; ;
+ 
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  
+}
+.post-job-button a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.post-job-button:hover {
+  background: #0f2f50;;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .greeting-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .greeting {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .post-job-button {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  .greeting h1 {
+    font-size: 32px;
+  }
+
+  .greeting .motive {
+    font-size: 24px;
+  }
+
+  .greeting .stats {
+    font-size: 18px;
+  }
+}

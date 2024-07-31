@@ -1,0 +1,165 @@
+/* Navbar.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  /* display: none; */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5%;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.anchor-home-page{
+text-decoration: none;
+font-weight: bolder;
+color: black;
+}
+.nav-item {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: green;
+  transition: width 0.3s;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-item:hover::after,
+.login:hover::after {
+  width: 100%;
+}
+
+.auth-buttons {
+  margin-left: 15px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.login,
+.signup {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login {
+  color: #000;
+}
+
+.signup {
+  color: #fff;
+  background-color: green;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.login::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: green;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.login:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  /* display: none; */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+  .login{
+    /* margin-left: -12px; */
+    margin-top: 12px;
+  }
+  .logo {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .signup {
+    background-color: green;
+    color: white;
+    width: fit-content;
+    margin-top: 12px;
+  }
+
+
+
+  
+}
+
+
+
