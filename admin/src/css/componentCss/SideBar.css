@@ -1,0 +1,146 @@
+/* Ensure the sidebar takes full height */
+html, body, .app-root, .admin-dashboard {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-navbar {
+  width: 100%;
+  height: 60px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.sidebar-logo-header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar-logo {
+  width: 80%; /* Adjust width as needed */
+  height: auto; /* Ensure logo maintains its aspect ratio */
+  display: block;
+}
+
+.sidebar-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.sidebar-navigation li {
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.sidebar-navigation li.active {
+  border-bottom: 2px solid green; /* Adjust thickness and color as needed */
+}
+
+.sidebar-navigation li:hover {
+  border-bottom: 2px solid green; /* Ensure hover effect is visible */
+}
+
+.sidebar-logout-button {
+  padding: 10px 20px;
+  margin: 1%;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+.sidebar-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 994px) {
+  .sidebar-navbar {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .sidebar-navigation {
+      flex-direction: column;
+      align-items: flex-start;
+      display: none;
+      width: 100%;
+  }
+
+  .sidebar-navigation.open {
+      display: flex;
+  }
+
+  .sidebar-navigation ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+  }
+
+  .sidebar-navigation li {
+      padding: 10px 20px;
+      width: 100%;
+  }
+
+  .sidebar-logout-button {
+      padding: 10px 20px;
+      width: calc(100% - 90px);
+      margin: 15px 20px;
+  }
+
+  .sidebar-menu-toggle {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar-navigation li {
+      padding: 8px 20px;
+  }
+
+  .sidebar-logout-button {
+      padding: 8px 20px;
+  }
+}

@@ -1,0 +1,64 @@
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.booking-table th, .booking-table td {
+  border: 1px solid #ddd;
+  padding: 30px;
+  text-align: left;
+}
+
+.status-active {
+  color: green;
+}
+
+.status-completed {
+  color: blue;
+}
+
+.status-done {
+  color: green;
+}
+
+.status-not-done {
+  color: red;
+}
+.small-screen{
+  display: none;
+}
+
+
+/* Responsive styling */
+@media (max-width: 1300px) {
+  .booking-table thead {
+    display: none;
+  }
+  .small-screen{
+    display: block;
+  }
+  
+
+  .booking-table tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+
+  .booking-table td {
+    display: block;
+    text-align: left;
+
+    position: relative;
+  }
+
+  .booking-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

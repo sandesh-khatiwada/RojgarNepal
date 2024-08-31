@@ -1,0 +1,33 @@
+/* ToggleButtons.css */
+.toggle-buttons {
+  display: flex;
+  margin-top: 20px; /* Add margin from top */
+  margin-bottom: 20px; /* Optional: Space below the buttons */
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 15px; /* Increased padding for larger buttons */
+  font-size: 18px; /* Increased font size for better readability */
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.toggle-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .toggle-buttons {
+    flex-direction: column;
+  }
+
+  .toggle-btn {
+    margin-bottom: 10px;
+  }
+}

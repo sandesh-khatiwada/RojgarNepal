@@ -1,0 +1,28 @@
+.adminfilter {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 30px; */
+  margin-top: -100px;
+  margin-left: 300px;
+  /* background: #2c3e50; */
+  height: 100px;
+  padding: 10px;
+}
+
+.adminfilter label {
+  margin-right: 0px;
+}
+
+.adminfilter input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.adminfilter-button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
