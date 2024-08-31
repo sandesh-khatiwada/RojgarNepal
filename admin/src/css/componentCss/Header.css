@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: flex-start; /* Align content to the start (left) */
+  margin-left: -50%; /* Add margin to move the header slightly to the left */
+  margin-top: 20px; /* Optional: Add margin to the top if needed */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally within the column */
+  gap: 10px; /* Space between h1 and Circlecheck */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem; /* Adjust font size as needed */
+  color: #333; /* Change color as needed */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start for smaller screens */
+  }
+
+  .header-content {
+    align-items: flex-start; /* Align items to the start */
+    gap: 5px; /* Adjust space for smaller screens */
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}

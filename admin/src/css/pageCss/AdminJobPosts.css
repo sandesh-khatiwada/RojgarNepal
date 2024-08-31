@@ -1,0 +1,10 @@
+/* AdminJobPosts.css */
+.admin-job-posts {
+  display: flex;
+}
+
+.job-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 200px; /* Adjust this value based on the width of your SideBar */
+}

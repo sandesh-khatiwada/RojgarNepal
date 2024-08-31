@@ -1,0 +1,21 @@
+/* AdminUserStatistics.css */
+.admin-user-statistics-wrapper {
+  display: flex;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.admin-top-controls {
+  display: flex;
+  margin-left: 18%;
+  align-items: center; /* Aligns items vertically centered */
+  margin-top: 20px; /* Margin from top for the container */
+}
+
+.admin-top-controls .header {
+  flex: 1; /* Take up remaining space */
+  margin-left: 10%; /* Space between the toggle buttons and header */
+}

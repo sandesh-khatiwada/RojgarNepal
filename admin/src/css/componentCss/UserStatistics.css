@@ -1,0 +1,118 @@
+.user-statistics {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-statistics-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto; /* Ensure the table is scrollable horizontally on small screens */
+}
+
+.user-statistics-table th, .user-statistics-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.user-statistics-table th {
+  background-color: #f2f2f2;
+}
+
+.user-statistics-table td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.status-verified {
+  color: green;
+}
+
+.status-unverified {
+  color: orange;
+}
+
+.edit-btn, .delete-btn, .link-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn:hover, .delete-btn:hover, .link-btn:hover {
+  color: blue;
+}
+
+.link-btn {
+  background-color: #f0ad4e;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.link-btn:hover {
+  background-color: #ec971f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-statistics-table th, .user-statistics-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .user-statistics-table td img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-statistics-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+
+
+  }
+
+  .user-statistics-table th, .user-statistics-table td {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+
+ 
+  }
+
+  .user-statistics-table thead {
+    display: none;
+  }
+
+  .user-statistics-table tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .user-statistics-table td {
+    position: relative;
+    /* padding-left: 50%; */
+    text-align: left;
+
+  }
+
+  .user-statistics-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #666;
+  }
+}
