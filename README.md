@@ -171,6 +171,7 @@ To run the project, follow the instructions below:
 - Access the admin dashboard at `http://localhost:5174`.
 - The server will be running at `http://localhost:5000`.
 - The recommendation server will be running at `http://localhost:8000`.
+- The default login credentials for admin is : username= admin123 password= admin@123
 
 ## Contributing
 Contributions are welcome! Please follow the standard GitHub flow for contributions.
